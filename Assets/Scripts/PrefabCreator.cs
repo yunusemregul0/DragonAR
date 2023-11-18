@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 using UnityEngine.XR.ARFoundation;
 
 public class PrefabCreator : MonoBehaviour
@@ -28,4 +29,5 @@ public class PrefabCreator : MonoBehaviour
             dragon.transform.position += prefabVector;
         }
     }
+
 }

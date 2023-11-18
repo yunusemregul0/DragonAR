@@ -1191,7 +1191,7 @@ GameObject:
   - component: {fileID: 4040315575906440}
   m_Layer: 0
   m_Name: Bone.026
-  m_TagString: Untagged
+  m_TagString: Head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2247,9 +2247,10 @@ GameObject:
   - component: {fileID: 114428407355665034}
   - component: {fileID: 721627423}
   - component: {fileID: 1249433886497777796}
+  - component: {fileID: 1322947909}
   m_Layer: 0
   m_Name: RedDragon1.1
-  m_TagString: Untagged
+  m_TagString: Dragon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2333,6 +2334,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1322947909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494583877365688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f786c9d191912c4886185ca4ff41919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atesEfekti: {fileID: 5521689205223200212, guid: a7097133036c1b94b8dbc9da9800034d, type: 3}
+  kafaPrefab: {fileID: 1263063408305562}
 --- !u!1 &1512466809879022
 GameObject:
   m_ObjectHideFlags: 0

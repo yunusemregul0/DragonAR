@@ -5,26 +5,44 @@ using UnityEngine;
 public class DragonController : MonoBehaviour
 {
     [SerializeField] private float speed;
-    private FixedJoystick joystick;
+    private FixedJoystick movementJoystick; 
+    private FixedJoystick rotationJoystick; 
     private Rigidbody rigidBody;
+    private GameObject fireEffect;
 
     private void OnEnable()
     {
-        joystick = FindObjectOfType<FixedJoystick>();
+        var allJoystikcs = FindObjectsOfType<FixedJoystick>();
+        movementJoystick = allJoystikcs[0];
+        rotationJoystick = allJoystikcs[1];
+
         rigidBody = gameObject.GetComponent<Rigidbody>();
     }
 
     private void FixedUpdate()
     {
-        var xVal = joystick.Horizontal;
-        var yVal = joystick.Vertical;
+        var xVal = movementJoystick.Horizontal;
+        var yVal = movementJoystick.Vertical;
+        var yValOfSecond = rotationJoystick.Vertical;
 
-        Vector3 movement = new Vector3 (xVal, 0, yVal);
+        Vector3 movement = new Vector3(xVal, yValOfSecond, yVal);
         rigidBody.velocity = movement * speed;
 
-        if(xVal != 0 && yVal != 0)
+        fireEffect = GameObject.FindWithTag("Fire");
+        if (fireEffect is not null)
         {
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Atan2(xVal,yVal)*Mathf.Rad2Deg, transform.eulerAngles.z);
+            var rigidFire = fireEffect.GetComponent<Rigidbody>();
+            rigidFire.velocity = movement * speed;
         }
+
+        if (xVal != 0 && yVal != 0)
+        {
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Atan2(xVal, yVal) * Mathf.Rad2Deg, transform.eulerAngles.z);
+            if (fireEffect is not null)
+            {
+                fireEffect.transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Atan2(xVal, yVal) * Mathf.Rad2Deg, transform.eulerAngles.z);
+            }
+        }
+
     }
 }
