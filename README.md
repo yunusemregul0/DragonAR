@@ -44,4 +44,10 @@ stratejik tercihtir.
 1. Uygulamayı başlatın ve ejderha resmini Image Tracker ile izleyin.
 2. Joystick'leri kullanarak ejderhayı hareket ettirin.
 3. Alev püskürtmek için "Alev" butonuna dokunun.
+   
+## Oluşturanlar
+### [**YUNUS EMRE GUL**](https://www.linkedin.com/in/yunus-emre-gul-00/)
+### [**SERHAT AKCADAG**](https://www.linkedin.com/in/serhatakcadag/)
+### [**YUNUS EMRE GOLBASI**](https://www.linkedin.com/in/yunusemregolbasi/)
+
 
