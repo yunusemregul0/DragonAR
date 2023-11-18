@@ -45,6 +45,8 @@ stratejik tercihtir.
 2. Joystick'leri kullanarak ejderhayı hareket ettirin.
 3. Alev püskürtmek için "Alev" butonuna dokunun.
    
+### [Proje hakkında detaylı bilgilendirme için tıklayınız.](https://drive.google.com/file/d/1mD7T97CBipJ5ou8llaIASBW70IS7Uj5z/view?usp=sharing)
+
 ## Oluşturanlar
 ### [**YUNUS EMRE GUL**](https://www.linkedin.com/in/yunus-emre-gul-00/)
 ### [**SERHAT AKCADAG**](https://www.linkedin.com/in/serhatakcadag/)
